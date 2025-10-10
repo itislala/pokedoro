@@ -9,6 +9,14 @@
 <body>
     <div class="pomodoro">
         <h1>Pomodoro timer</h1>
+        <div class="btTypes">
+            <button onclick="selectTimer(pomodoro)" id="pomodoro" class="modality activeButton"> 
+                Pomodoro
+            </button>
+            <button onclick="selectTimer(shortBreak)" id="shortBreak" class="modality">
+                Short Break
+            </button>
+        </div>
         <p class="timer" id="timer">25:00</p>
         <button onclick="StartStop()" id="startStop">Start</button>
     </div>
@@ -25,8 +33,8 @@
     <div class="pokedex">
 
     </div>
-    <script src="Pomodoro.js"></script>
-    <script src="ToDoList.js"></script>
-    <script src="Pokedex.js"></script>
+    <script src="Pomodoro.js" defer></script>
+    <script src="ToDoList.js" defer></script>
+    <script src="Pokedex.js" defer></script>
 </body>
 </html>
