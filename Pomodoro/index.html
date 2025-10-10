@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedoro</title>
+</head>
+<body>
+    <div class="pomodoro">
+        <h1>Pomodoro timer</h1>
+        <p class="timer" id="timer">25:00</p>
+        <button onclick="StartStop()" id="startStop">Start</button>
+    </div>
+    <div class="toDoList">
+        <h1>To do List</h1>
+        <p>Time to focus on</p>
+        <input type="text" id="inputTask" placeholder="Type your task">
+        <button onclick="addTask()">
+            Add
+        </button>
+        <p id="message"></p>
+        <ul id="taskList"></ul>
+    </div>
+    <div class="pokedex">
+
+    </div>
+    <script src="Pomodoro.js"></script>
+    <script src="ToDoList.js"></script>
+    <script src="Pokedex.js"></script>
+</body>
+</html>
