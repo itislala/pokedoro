@@ -62,7 +62,7 @@ function StartStop() {
         interval = setInterval(() => {
             secondsRemaining--;
             clock.innerHTML = secondsToMinutes(secondsRemaining);
-            if (secondsRemaining == 0) {
+            if (secondsRemaining <= 0) {
                 clearInterval(interval);
                 alert("Time's up!");
                 clock.innerHTML = secondsToMinutes(0);
@@ -71,7 +71,7 @@ function StartStop() {
                 secondsRemaining = null
             }
         },
-            1000)
+            100)
     }
     else {
         stopTimer();

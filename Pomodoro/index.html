@@ -4,34 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pokedoro.ico">
     <link rel="stylesheet" href="style.css">
     <title>Pokedoro</title>
 </head>
-<body>
-    <div class="pomodoro">
-        <h1>Pomodoro timer</h1>
-        <div class="btTypes">
-            <button id="pomodoro" class="modality activeButton">Pomodoro</button>
-            <button id="shortBreak" class="modality">Short Break</button>
-        </div>
-        <p class="timer" id="timer">25:00</p>
-        <button id="startStop">Start</button>
-    </div>
-    <div class="toDoList">
-        <h1>To do List</h1>
-        <p>Time to focus on</p>
-        <input type="text" id="inputTask" placeholder="Type your task">
-        <button onclick="addTask()">
-            Add
-        </button>
-        <p id="message"></p>
-        <ul id="taskList"></ul>
-    </div>
-    <div class="pokedex">
 
+<body>
+    <div class="mainLayout">
+        <section class="leftColumn">
+            <div class="pomodoro">
+                <h1>Pomodoro timer</h1>
+                <div class="btTypes">
+                    <button id="pomodoro" class="modality activeButton">Pomodoro</button>
+                    <button id="shortBreak" class="modality">Short Break</button>
+                </div>
+                <p id="timer">25:00</p>
+                <button id="startStop">Start</button>
+            </div>
+            <div class="toDoList">
+                <h1>To do List</h1>
+                <p>Time to focus on</p>
+                <input type="text" id="inputTask" placeholder="Type your task">
+                <button class="addBT" onclick="addTask()">+</button>
+                <p id="message"></p>
+                <ul id="taskList"></ul>
+            </div>
+        </section>
+        <div class="pokedex">
+            <img src="pokedex.png" alt="pokedex" class="dex">
+            <img src="pokemonTeste.jpg" alt="pokemon" class="pokemonImg">
+            <form class="form">
+                <input type="search" class="pokeInput" placeholder="Who is that pokemon?">
+            </form>
+        </div>
+        <script src="Pomodoro.js" defer></script>
+        <script src="ToDoList.js" defer></script>
+        <script src="Pokedex.js" defer></script>
     </div>
-    <script src="Pomodoro.js" defer></script>
-    <script src="ToDoList.js" defer></script>
-    <script src="Pokedex.js" defer></script>
 </body>
+
 </html>

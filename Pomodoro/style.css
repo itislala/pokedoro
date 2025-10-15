@@ -1,4 +1,179 @@
-.activeButton
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex', sans-serif;
+    color: #343434;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.mainLayout {
+    background-color: #ffffff;
+    width: 75vw;
+    height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+}
+/* Coluna na esquerda */
+.leftColumn {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+}
+
+/* Pomodoro */
+.pomodoro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+    width: 80%;
+}
+.pomodoro h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #919191;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.pomodoro .btTypes {
+    cursor: pointer;
+}
+
+.pomodoro .activeButton {
+    background-color: #E3350D !important;
+    color: #FFFFFF !important;
+}
+
+.pomodoro #timer {
+    font-size: 6.25rem;
+    font-weight: bold;
+    margin: 30px 0;
+    color: #353535;
+}
+
+.pomodoro #startStop {
+    font-size: 1.625rem;
+    text-transform: uppercase;
+    width: 200px;
+    height: 55px;
+    border-radius: 5px;
+}
+
+/* To-do List */
+.toDoList {
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+.toDoList h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.toDoList p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.toDoList input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #353535;
+    margin-bottom: 10px;
+    width: 300px;
+    outline: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.toDoList .addBT {
+    background: #919191;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 100%;
+    text-align: center;
+}
+
+.toDoList button {
+    text-align: right;
+}
+
+.toDoList ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.toDoList ul li {
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    color: #343434;
+}
+
+/* Coluna direita: Pokédex */
+.pokedex {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dex {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.pokemonImg {
+    position: absolute;
+    top: 30%;
+    height: 20%;
+}
+.form
 {
-    color: crimson;
+    width: 300px;
+    position: absolute;
+    background-color: #E3350D;
+    top: 63%;
+}
+.pokeInput{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #353535;
+    border-radius: 5px;
+    font-weight: 600px;
+    font-size: 0.9rem;
 }
