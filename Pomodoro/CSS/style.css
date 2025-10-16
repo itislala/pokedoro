@@ -145,15 +145,19 @@ button {
     display: flex;
     justify-content: center;
 }
-
+#pkmStorage{
+    flex-basis: 50%;
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+}
 .dex {
     width: 100%;
-    top: 60%;
     max-width: 400px;
     position: relative;
 }
 
-.pokemonImg {
+.pokemonImage {
     position: absolute;
     top: 30%;
     height: 20%;

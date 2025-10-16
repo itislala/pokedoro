@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="pokedoro.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Pomodoro/Img/pokedoro.ico">
+    <link rel="stylesheet" href="Pomodoro/CSS/style.css">
     <title>Pokedoro</title>
 </head>
 
@@ -31,16 +31,19 @@
             </div>
         </section>
         <div class="pokedex">
-            <img src="pokedex.png" alt="pokedex" class="dex">
-            <img src="pokemonTeste.jpg" alt="pokemon" class="pokemonImg">
+            <div class="storage">
+                <img src="Pomodoro/Img/Box.png" alt="pokemonStorage" id="pkmStorage">
+            </div>
+            <img src="Pomodoro/Img/pokedex.png" alt="pokedex" class="dex">
+            <img src="" alt="pokemon" class="pokemonImage" id="pokemonImage">
             <form class="form">
-                <input class="pokeInput" placeholder="Who is that pokemon?">
+                <input id="pokeInput" class="pokeInput" placeholder="Who is that pokemon?">
             </form>
             <button id="pkmAdd">&gt;</button>
         </div>
-        <script src="Pomodoro.js" defer></script>
-        <script src="ToDoList.js" defer></script>
-        <script src="Pokedex.js" defer></script>
+        <script src="Pomodoro/JS/Pomodoro.js" defer></script>
+        <script src="Pomodoro/JS/ToDoList.js" defer></script>
+        <script src="Pomodoro/JS/Pokedex.js" defer></script>
     </div>
 </body>
 
